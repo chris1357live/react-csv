@@ -58,10 +58,10 @@ export const joiner = ((data, separator = ',', enclosingCharacter = '"') => {
       row => row
         .map((element) => elementOrEmpty(element))
         .map(column => `${enclosingCharacter}${column}${enclosingCharacter}`)
-        .join(`\n`);
+        .join(`\n`)
         
     )
-     .join(separator)
+     .join(separator);
     
 });
 
